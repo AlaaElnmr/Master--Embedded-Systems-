@@ -1,10 +1,9 @@
-
 /*
  ======================================================================================================================
- Name        : EX1_C_Program_to_Add_Two_Integers.
+ Name        : EX1_C_Program_To_Check_Whether_a_Number_Is_Even_Or_Odd.
  Author      : Alaa Jamal Mahmoud.
- Created on	 : April 20, 2024.
- Description : Unit_2 C_Progtamming >> Assignment_1 C_Basic. 
+ Created on	 : March 3, 2024.
+ Description : Unit_2 C_Progtamming >> Assignment_2 Loop&Condition.
  ======================================================================================================================
  */
 
@@ -13,11 +12,19 @@
 
 int main(void)
 {
-	int num1,num2,sum=0;
-	printf("Enter two integers: ");
+	int num;
+	printf("Enter an integer you want to check:");
 	fflush(stdin);fflush(stdout);
-	scanf(" %d\n%d\n",&num1,&num2);
-	sum=num1+num2;
-	printf("sum: %d \n",sum);
+	scanf("%d\n",&num);
+
+	if(num%2==0)
+	{
+		printf("%d is even\n",num);
+	}
+	else
+	{
+		printf("%d is odd\n",num);
+	}
+
 	return EXIT_SUCCESS;
 }

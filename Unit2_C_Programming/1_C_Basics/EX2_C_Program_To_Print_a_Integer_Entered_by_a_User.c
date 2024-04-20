@@ -1,30 +1,23 @@
 
 /*
  ======================================================================================================================
- Name        : EX6_C_Program_To_Swap_Two_Numbers.
+ Name        : EX2_C_Program_To_Print_a_Integer_Entered_by_a_User.
  Author      : Alaa Jamal Mahmoud.
- Created on	 : April 20, 2024.
- Description : Unit_2 C_Progtamming >> Assignment_1 C_Basic.
+ Created on	 : March 3, 2024.
+ Description : Unit_2 C_Progtamming >> Assignment_1 C_Basic. 
  ======================================================================================================================
  */
-
+ 
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
+ int main(void)
 {
-	float a,b,temp;
-	printf("Enter value of a:");
+	int num=0;
+	printf("Enter an integer: ");
 	fflush(stdin);fflush(stdout);
-	scanf(" %f\n",&a);
-
-	printf("Enter value of b:");
+	scanf("%d\n",&num);
 	fflush(stdin);fflush(stdout);
-	scanf(" %f\n",&b);
-	temp=a;
-	a=b;
-	b=temp;
-	printf("After swapping, value of a = %.2f \n",a);
-	printf("After swapping, value of b = %.2f \n",b);
+	printf("You entered: %d \n",num);
 	return EXIT_SUCCESS;
 }

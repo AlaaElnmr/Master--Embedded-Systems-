@@ -1,22 +1,25 @@
-
 /*
  ======================================================================================================================
- Name        : EX5_C_Program_to_Find_ASCII_Value_of_a_Character.
+ Name        : EX6_C_Program_To_Find_Calculate_Sum_Of_Natural_Numbers.
  Author      : Alaa Jamal Mahmoud.
- Created on	 : April 20, 2024.
- Description : Unit_2 C_Progtamming >> Assignment_1 C_Basic. 
+ Created on	 : March 3, 2024.
+ Description : Unit_2 C_Progtamming >> Assignment_2 Loop&Condition.
  ======================================================================================================================
  */
-
+ 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-	char character;
-	printf("Enter a character: ");
-	fflush(stdin);fflush(stdout);
-	scanf("%c\n",&character);
-	printf("ASCII value of %c = %d \n",character,character);
+	int i,num=0,sum=0;
+	printf("Enter an integer:");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&num);
+	for(i=1;i<=num;i++)
+	{
+		sum+=i;
+	}
+	printf("sum = %d",sum);
 	return EXIT_SUCCESS;
 }

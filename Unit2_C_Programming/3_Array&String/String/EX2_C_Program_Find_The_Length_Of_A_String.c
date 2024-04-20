@@ -1,23 +1,29 @@
-
 /*
  ======================================================================================================================
- Name        : EX2_C_Program_To_Print_a_Integer_Entered_by_a_User.
+ Name        : EX2_C_Program_Find_The_Length_Of_A_String.
  Author      : Alaa Jamal Mahmoud.
- Created on	 : April 20, 2024.
- Description : Unit_2 C_Progtamming >> Assignment_1 C_Basic. 
+ Created on	 : March 10, 2024.
+ Description : Unit_2 C_Progtamming >> Assignment_3 String.
  ======================================================================================================================
  */
- 
+
 #include <stdio.h>
 #include <stdlib.h>
 
- int main(void)
+int main(void)
 {
-	int num=0;
-	printf("Enter an integer: ");
+	int i,lenght=0;
+	char str[1000];
+	printf("Enter a string:");
 	fflush(stdin);fflush(stdout);
-	scanf("%d\n",&num);
-	fflush(stdin);fflush(stdout);
-	printf("You entered: %d \n",num);
+	scanf("%s",str);
+
+	for(i=0;str[i]!=0;i++)
+	{
+		lenght++;
+
+	}
+
+	printf("Length of string: %d",lenght);
 	return EXIT_SUCCESS;
 }
